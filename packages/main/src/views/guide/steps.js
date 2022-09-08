@@ -1,37 +1,36 @@
 const steps = [
   {
-    element: '.ant-btn-primary',
+    element: ".custom-btn-primary",
     popover: {
-      title: '打开引导',
-      description: '打开页面引导',
-      position: 'bottom'
-    }
+      title: "打开引导",
+      description: "打开页面引导",
+      position: "bottom",
+    },
   },
   {
-    element: '.hamburger-container',
+    element: ".hamburger-container",
     popover: {
-      title: 'Hamburger',
-      description: '打开/收起左侧导航栏',
-      position: 'bottom'
-    }
+      title: "Hamburger",
+      description: "打开/收起左侧导航栏",
+      position: "bottom",
+    },
   },
   {
-    element: '.fullScreen-container',
+    element: ".fullScreen-container",
     popover: {
-      title: 'Screenfull',
-      description: '全屏',
-      position: 'left'
-    }
+      title: "Screenfull",
+      description: "全屏",
+      position: "left",
+    },
   },
   {
-    element: '.settings-container',
+    element: ".settings-container",
     popover: {
-      title: 'Settings',
-      description: '系统设置',
-      position: 'left'
-    }
+      title: "Settings",
+      description: "系统设置",
+      position: "left",
+    },
   },
-  
-]
+];
 
-export default steps
+export default steps;
