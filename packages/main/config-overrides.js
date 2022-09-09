@@ -25,16 +25,12 @@ const addCustomize = () => (config) => {
     new AntDesignThemePlugin({
       antDir: path.join(__dirname, "./node_modules/antd"),
       stylesDir: path.join(__dirname, "./src"),
-      varFile: path.join(__dirname, "./src/public/styles/theme.less"),
-      themeVariables: [
-        "@primary-color",
-        "@primary-shade-color",
-        "@primary-tint-color",
-      ],
+      varFile: path.join(__dirname, "./src/styles/variable.less"),
+      themeVariables: ["@primary-color"],
       indexFileName: "./public/index.html",
       generateOnce: true,
-      lessUrl:
-        "https://cdnjs.cloudflare.com/ajax/libs/less.js/2.7.2/less.min.js",
+      customColorRegexArray: [],
+      outputFilePath: path.join(__dirname, "./public/color.less"), //提取的less文件输出到什么地方
     })
   );
   return config;

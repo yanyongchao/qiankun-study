@@ -1,6 +1,6 @@
 const steps = [
   {
-    element: ".custom-btn-primary",
+    element: ".ant-btn-primary",
     popover: {
       title: "打开引导",
       description: "打开页面引导",

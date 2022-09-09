@@ -8,7 +8,7 @@ import Router from "./router";
 class App extends Component {
   render() {
     return (
-      <ConfigProvider locale={zhCN} prefixCls="custom">
+      <ConfigProvider locale={zhCN}>
         <Provider store={store}>
           <Router />
         </Provider>
