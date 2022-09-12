@@ -124,4 +124,8 @@ const Login = (props) => {
   );
 };
 
-export default connect((state) => state.user, { login, getUserInfo })(Login);
+const WrapLogin = Form.create()(Login);
+
+export default connect((state) => state.user, { login, getUserInfo })(
+  WrapLogin
+);
