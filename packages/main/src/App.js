@@ -1,20 +1,17 @@
-import React, { Component } from "react";
-import { Provider } from "react-redux";
-import { ConfigProvider } from "antd";
-import zhCN from "antd/es/locale/zh_CN";
+import React from "react";
+import { StoreContext } from "./context";
 import store from "./store";
-import Router from "./router";
+import { ConfigProvider } from "antd";
+import Main from "./views/index";
 
-class App extends Component {
-  render() {
-    return (
-      <ConfigProvider locale={zhCN}>
-        <Provider store={store}>
-          <Router />
-        </Provider>
-      </ConfigProvider>
-    );
-  }
-}
+const App = () => {
+  return (
+    <ConfigProvider prefixCls="custom">
+      <StoreContext.Provider value={store}>
+        <Main />
+      </StoreContext.Provider>
+    </ConfigProvider>
+  );
+};
 
 export default App;

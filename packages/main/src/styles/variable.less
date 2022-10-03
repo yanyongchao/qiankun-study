@@ -1,30 +1,6 @@
 // var.less
 
-@import "~antd/lib/style/themes/default.less";
-
+// @import "~antd/lib/style/themes/default.less";
+@ant-prefix: custom;
 // 覆盖 antd 的默认主题色
-@primary-color: #397ef0;
-
-//主题色透明度
-@primary-1: ~"fade(@primary-color, 10%)";
-@primary-2: ~"fade(@primary-color, 20%)";
-@primary-3: ~"fade(@primary-color, 30%)";
-@primary-4: ~"fade(@primary-color, 40%)";
-@primary-5: ~"fade(@primary-color, 50%)";
-@primary-6: ~"fade(@primary-color, 60%)";
-@primary-7: ~"fade(@primary-color, 70%)";
-@primary-8: ~"fade(@primary-color, 80%)";
-@primary-9: ~"fade(@primary-color, 90%)";
-
-:root {
-  --primary-color: @primary-color;
-  --primary-color-1: @primary-1;
-  --primary-color-2: @primary-2;
-  --primary-color-3: @primary-3;
-  --primary-color-4: @primary-4;
-  --primary-color-5: @primary-5;
-  --primary-color-6: @primary-6;
-  --primary-color-7: @primary-7;
-  --primary-color-8: @primary-8;
-  --primary-color-9: @primary-9;
-}
+@primary-color: ~"var(--custom-primary-color)";

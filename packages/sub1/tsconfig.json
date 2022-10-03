@@ -14,6 +14,7 @@
       "@/*": ["src/*"],
       "@@/*": ["src/.umi/*"]
     },
+    "noImplicitAny": false,
     "allowSyntheticDefaultImports": true
   },
   "include": [

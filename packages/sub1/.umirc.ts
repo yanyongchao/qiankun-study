@@ -4,22 +4,9 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [
-    {
-      path: '/',
-      component: './index',
-      routes: [
-        {
-          path: '/',
-          redirect: '/home',
-        },
-        {
-          path: '/home',
-          name: 'home',
-          component: './Home',
-        },
-      ],
-    },
-  ],
+  routes: [{ path: '/', component: '@/pages/index' }],
   fastRefresh: {},
+  qiankun: {
+    slave: {},
+  },
 });

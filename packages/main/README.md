@@ -1,141 +1,70 @@
+# Getting Started with Create React App
 
-<p align="center">
-   <a href="https://nlrx-wjc.github.io/react-antd-admin-template/" target="_blank">
-      <img src="./logo.png"/>
-   </a>
-</p>
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# 简介
+## Available Scripts
 
-[react-antd-admin-template](https://nlrx-wjc.github.io/react-antd-admin-template/) 是一个基于 `React` 和 `Ant Design` 的后台管理系统模板。它内置了用户登录/登出，动态路由，权限校验，用户管理等典型的业务模型，可以帮助你快速搭建企业级中后台产品原型，是你接私活的不二之选。
+In the project directory, you can run:
 
-本系统的开发灵感来自 [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin/) ，这是一个基于 `Vue` 和 `ElementUI` 的优秀的后台管理系统模板，在这里向大佬致敬！
+### `npm start`
 
-其实我的主技术栈一直是 `Vue`，只是最近入坑了 `React` ，看了大半个月文档，就想牛刀小试一下，哈哈。不是有那句话么：检验学习成果最好的方式就是造轮子。所以就造了这么个轮子，哈哈。对于 `React` ，我还是个小白，项目中肯定有做的不够好的地方，欢迎各位同好提 `pr` 或 `issue` 。
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-- [在线预览](https://nlrx-wjc.github.io/react-antd-admin-template/)
-- [Gitee在线预览(国内用户可访问该地址)](https://nlrx.gitee.io/react-antd-admin-template/)
-- [开发文档](https://nlrx-wjc.github.io/react-antd-admin-template-doc/) 目前还在持续编写完善中...
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-# 功能
+### `npm test`
 
-```bash
-- 登录 / 注销
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-- 权限验证
-  - 页面权限
-  - 路由权限
+### `npm run build`
 
-- 全局功能
-  - 动态侧边栏（支持多级路由嵌套）
-  - 动态面包屑
-  - 本地/后端 mock 数据
-  - Screenfull全屏
-  - 自适应收缩侧边栏
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-- 编辑器
-  - 富文本
-  - Markdown
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-- Excel
-  - 导出excel
-  - 导入excel
-  - 前端可视化excel
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- Zip
-  - 导出zip
+### `npm run eject`
 
-- 错误页面
-  - 404
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-- 组件
-  - 拖拽列表
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- 表格
-- Dashboard
-- 引导页
-- ECharts 图表
-- 剪贴板
-```
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-# 目录结构
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-```bash
-├─ public                     # 静态资源
-│   ├─ favicon.ico            # favicon图标
-│   └─ index.html             # html模板
-├─ src                        # 项目源代码
-│   ├─ api                    # 所有请求
-│   ├─ assets                 # 图片 字体等静态资源
-│   ├─ components             # 全局公用组件
-│   ├─ config                 # 全局配置
-│   │   ├─ menuConfig.js      # 导航菜单配置
-│   │   └─ routeMap.js        # 路由配置
-│   ├─ lib                    # 第三方库按需加载
-│   ├─ mock                   # 项目mock 模拟数据
-│   ├─ store                  # 全局 store管理
-│   ├─ styles                 # 全局样式
-│   ├─ utils                  # 全局公用方法
-│   ├─ views                  # views 所有页面
-│   ├─ App.js                 # 入口页面
-│   ├─ defaultSettings.js     # 全局默认配置
-│   └─index.js                # 源码入口
-├── .env.development          # 开发环境变量配置
-├── .env.production           # 生产环境变量配置
-├── config-overrides.js       # 对cra的webpack自定义配置
-├── deploy.sh                 # CI部署脚本
-├── .travis.yml               # 自动化CI配置
-└── package.json              # package.json
-```
+## Learn More
 
-# 安装
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-```shell
-# 克隆项目
-git clone https://github.com/NLRX-WJC/react-antd-admin-template.git
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-# 进入项目目录
-cd react-antd-admin-template
+### Code Splitting
 
-# 安装依赖
-npm install
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-# 切换淘宝源，解决 npm 下载速度慢的问题
-npm install --registry=https://registry.npm.taobao.org
+### Analyzing the Bundle Size
 
-# 启动服务
-npm start
-```
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-启动完成后会自动打开浏览器访问 [http://localhost:3000](http://localhost:3000)， 你看到下面的页面就代表操作成功了。
+### Making a Progressive Web App
 
-![](./guide.gif)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-接下来你可以修改代码进行业务开发了。
+### Advanced Configuration
 
-# 关于作者
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-大家好，我是难凉热血。
+### Deployment
 
-终南山下码农一枚，师从道长王重阳，酷爱打码，崇尚开源精神，乐于分享。
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-2005年服役于中国人民解放军东南战区狼牙特种大队，担任狙击手。
+### `npm run build` fails to minify
 
-2008年受俄罗斯阿尔法特种部队邀请，执教于该特种部队第一大队教授其队员学习中国特色社会主义理论及毛泽东思想。
-
-2011年竞选美国总统落选，遂心灰意冷，放下所有荣誉，隐居终南山下。
-
-2015年受道长王重阳委托，为道观开发香火管理系统，遂沉迷IT，无法自拔。
-
-喜欢折腾和搞机，追求新鲜技术。
-
-下边是我的微信，欢迎同好伙伴一起树(tree)新(new)风(bee)！！！
-
-![](./wechat.jpg)
-
-# 鼓励作者
-
-作为个人开发者，维护开源实属不易。如果您觉得本项目对你有些许帮助的话，还请帮忙点个 star 哈~~
-如果您有余力的话也非常感谢您对我的赞赏，您的赞赏，是对我创作最大的认可和鼓励。
-
-![](./pay.png)
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

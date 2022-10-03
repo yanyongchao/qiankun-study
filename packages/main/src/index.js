@@ -1,9 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import App from "./App";
-import "antd/dist/antd.less";
-// import "@/styles/index.less";
+import { createRoot } from "react-dom/client";
+import "@/styles/index.less";
 import "./mock";
-// import '@/lib/monitor';
 
-ReactDOM.render(<App />, document.getElementById("root"));
+const container = document.getElementById("root");
+const root = createRoot(container);
+root.render(<App />);

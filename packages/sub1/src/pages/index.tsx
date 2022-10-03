@@ -1,8 +1,9 @@
-export default function IndexPage({ children }) {
+import styles from './index.less';
+
+export default function IndexPage() {
   return (
     <div>
-      <h2>dd</h2>
-      {children}
+      <h1 className={styles.title}>Page index</h1>
     </div>
   );
 }

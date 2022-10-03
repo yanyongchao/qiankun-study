@@ -17,14 +17,14 @@ const users = {
     role: "editor",
     name: "编辑员",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-    description:"可以看到除户管理页面之外的所有页面",
+    description: "可以看到除户管理页面之外的所有页面",
   },
   "guest-token": {
     id: "guest",
     role: "guest",
     name: "游客",
     avatar: "https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png",
-    description:"仅能看到Dashboard、作者博客、权限测试和关于作者四个页面",
+    description: "仅能看到Dashboard、作者博客、权限测试和关于作者四个页面",
   },
 };
 
@@ -94,18 +94,18 @@ export default {
       };
     } else {
       return {
-        status: 0
+        status: 0,
       };
     }
   },
   addUser: (config) => {
     const data = JSON.parse(config.body);
     const { id } = data;
-    tokens[id] = `${id}-token`
+    tokens[id] = `${id}-token`;
     users[`${id}-token`] = {
       ...users["guest-token"],
-      ...data
-    }
+      ...data,
+    };
     return {
       status: 0,
     };
