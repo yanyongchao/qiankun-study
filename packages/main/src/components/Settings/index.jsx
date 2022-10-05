@@ -43,9 +43,13 @@ const Settings = observer(() => {
                     primaryColor: color,
                   },
                 });
-                window.less.modifyVars({
-                  "@primary-color": color,
-                });
+                window.dispatchEvent(
+                  new CustomEvent("qiankun:changeTheme", {
+                    detail: {
+                      color,
+                    },
+                  })
+                );
               }}
             ></ColorInput>
           </Col>

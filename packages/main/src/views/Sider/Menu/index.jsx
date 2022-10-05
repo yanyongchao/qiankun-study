@@ -5,10 +5,10 @@ import { push } from "@/utils/route";
 import { useMount } from "ahooks";
 
 const SiderMenu = () => {
-  const [selectedKeys, setSelectedKeys] = useState([]);
+  const [selectedKeys, setSelectedKeys] = useState();
   useMount(() => {
     const historyChange = () => {
-      const selectedKeys = window.location.pathname.split("/").slice(1);
+      const selectedKeys = window.location.pathname.slice(1);
       console.log("selectedKeys", selectedKeys);
       setSelectedKeys(selectedKeys);
     };
@@ -32,6 +32,18 @@ const SiderMenu = () => {
             key: "app1",
             icon: <UserOutlined />,
             label: "app1",
+            children: [
+              {
+                key: "app1/one",
+                icon: <UserOutlined />,
+                label: "app1-one",
+              },
+              {
+                key: "app1/two",
+                icon: <UserOutlined />,
+                label: "app1-two",
+              },
+            ],
           },
           {
             key: "app2",

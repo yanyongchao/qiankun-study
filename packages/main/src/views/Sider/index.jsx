@@ -17,6 +17,9 @@ const LayoutSider = () => {
           entry: "http://localhost:3001/",
           container: "#layout-content",
           activeRule: "/app1",
+          props: {
+            aaaa: 333,
+          },
         },
         {
           name: "app2",
@@ -35,7 +38,7 @@ const LayoutSider = () => {
       sandbox: false,
       singular: true,
     });
-    setDefaultMountApp("/app1");
+    setDefaultMountApp("/app1/one");
   });
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>

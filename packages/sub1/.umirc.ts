@@ -4,7 +4,25 @@ export default defineConfig({
   nodeModulesTransform: {
     type: 'none',
   },
-  routes: [{ path: '/', component: '@/pages/index' }],
+  antd: false,
+  routes: [
+    {
+      path: '/',
+      component: '@/layouts/index',
+      routes: [
+        {
+          path: 'one',
+          name: 'one',
+          component: '@/pages/one',
+        },
+        {
+          path: '/two',
+          name: 'two',
+          component: '@/pages/two',
+        },
+      ],
+    },
+  ],
   fastRefresh: {},
   qiankun: {
     slave: {},
