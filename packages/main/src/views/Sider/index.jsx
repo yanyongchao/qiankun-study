@@ -3,7 +3,7 @@ import React, { useEffect, useContext } from "react";
 import Logo from "./Logo";
 import Menu from "./Menu";
 import { LayoutContext } from "../context";
-import { registerMicroApps, start } from "qiankun";
+import { registerMicroApps, start, setDefaultMountApp } from "qiankun";
 
 const { Sider } = Layout;
 
@@ -35,6 +35,7 @@ const LayoutSider = () => {
       sandbox: false,
       singular: true,
     });
+    setDefaultMountApp("/app1");
   });
   return (
     <Sider trigger={null} collapsible collapsed={collapsed}>

@@ -1,5 +1,5 @@
 {
-  "name": "@qiankun/main",
+  "name": "main",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -7,6 +7,7 @@
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ahooks": "^3.7.1",
     "antd": "^4.23.2",
     "axios": "^0.27.2",
     "draft-js": "^0.11.7",
@@ -23,6 +24,7 @@
     "mobx-react": "^7.5.3",
     "nprogress": "^0.2.0",
     "prop-types": "^15.8.1",
+    "qiankun": "^2.7.5",
     "react": "^18.2.0",
     "react-beautiful-dnd": "^13.1.1",
     "react-color": "^2.19.3",
@@ -39,8 +41,7 @@
     "redux-thunk": "^2.4.1",
     "screenfull": "^6.0.2",
     "web-vitals": "^2.1.4",
-    "xlsx": "^0.18.5",
-    "qiankun": "^2.7.5"
+    "xlsx": "^0.18.5"
   },
   "scripts": {
     "start": "craco start",
